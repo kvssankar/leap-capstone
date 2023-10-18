@@ -20,7 +20,6 @@ D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelit
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\controllers\BuynsellController.java
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\integration\mapper\HoldingResultMap.java
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\business\UserPreference.java
-D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\controllers\RoboAdvisorController.java
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\integration\mapper\StockResultMap.java
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\controllers\TransactionsController.java
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\business\RoboAdvisor.java
@@ -28,4 +27,3 @@ D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelit
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\services\AuthService.java
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\integration\UserPreferenceDaoImpl.java
 D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\controllers\PortfolioController.java
-D:\Associate\Desktop\capstone\spring-capstone-tradehub\src\main\java\com\fidelity\services\RoboAdvisorService.java
