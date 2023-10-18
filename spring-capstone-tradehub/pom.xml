@@ -37,6 +37,7 @@
 
 
 	<properties>
+    <start-class>com.fidelity.TradeHubApplication</start-class>
 
 		<!-- Generic properties -->
 
