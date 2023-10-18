@@ -38,10 +38,10 @@ export class BuynsellService {
       'Content-Type': 'application/json',
     });
     console.log('placeBuyOrder', headers);
-    // this.http.get('http://localhost:5000/buynsell/health');
+    // this.http.get('http://13.233.161.221:5000/buynsell/health');
     // this.http
     //   .post<any>(
-    //     'http://localhost:5000/buynsell/placeorder/buy',
+    //     'http://13.233.161.221:5000/buynsell/placeorder/buy',
     //     JSON.stringify(d),
 
     //     headers: new HttpHeaders({ 'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ export class BuynsellService {
     //   .pipe(catchError(this.handleError));
     return this.http
       .post<boolean>(
-        'http://localhost:5000/buynsell/placeorder/buy',
+        'http://13.233.161.221:5000/buynsell/placeorder/buy',
         JSON.stringify(d),
         {
           headers: new HttpHeaders({
@@ -85,10 +85,10 @@ export class BuynsellService {
       'Content-Type': 'application/json',
     });
     console.log('placeBuyOrder', headers);
-    // this.http.get('http://localhost:5000/buynsell/health');
+    // this.http.get('http://13.233.161.221:5000/buynsell/health');
     // this.http
     //   .post<any>(
-    //     'http://localhost:5000/buynsell/placeorder/buy',
+    //     'http://13.233.161.221:5000/buynsell/placeorder/buy',
     //     JSON.stringify(d),
 
     //     headers: new HttpHeaders({ 'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ export class BuynsellService {
     //   .pipe(catchError(this.handleError));
     return this.http
       .post<boolean>(
-        'http://localhost:5000/buynsell/placeorder/sell',
+        'http://13.233.161.221:5000/buynsell/placeorder/sell',
         JSON.stringify(d),
         {
           headers: new HttpHeaders({
@@ -118,21 +118,23 @@ export class BuynsellService {
 
   getInstrumentById(id: string): Observable<Instrument> {
     return this.http
-      .get<Instrument>(`http://localhost:3000/fmts/trades/instrument/${id}`)
+      .get<Instrument>(
+        `http://13.233.161.221:3000/fmts/trades/instrument/${id}`
+      )
       .pipe(catchError(this.handleError));
   }
 
   getHoldings(): Observable<Holding[]> {
     const user: User = this.authService.getUser();
     return this.http
-      .get<Holding[]>(`http://localhost:5000/portfolio/1`)
+      .get<Holding[]>(`http://13.233.161.221:5000/portfolio/1`)
       .pipe(catchError(this.handleError));
   }
 
   getTransactions(): Observable<Transaction[]> {
     const user: User = this.authService.getUser();
     return this.http
-      .get<Transaction[]>(`http://localhost:5000/transactions/1`)
+      .get<Transaction[]>(`http://13.233.161.221:5000/transactions/1`)
       .pipe(catchError(this.handleError));
   }
 

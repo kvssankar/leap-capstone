@@ -20,13 +20,13 @@ public class UserPreferenceController {
     @Autowired
     private AuthService service;
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "http://13.233.161.221:4200")
     @PostMapping("/addPreference")
     public ResponseEntity<Boolean> addUserPreference(@RequestBody UserPreference userPreference) {
         logger.info("User Preference added: ", userPreference);
         return ResponseEntity.ok(service.addClientPreference(userPreference));
     }
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "http://13.233.161.221:4200")
     @PutMapping("/updatePreference")
     public ResponseEntity<Boolean> updateUserPreference(@RequestBody UserPreference userPreference) {
         System.out.println(userPreference);

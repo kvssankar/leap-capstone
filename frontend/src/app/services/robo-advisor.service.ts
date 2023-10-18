@@ -14,7 +14,7 @@ import { UserPreference } from '../models/UserPreferences';
   providedIn: 'root',
 })
 export class RoboAdvisorService {
-  private roboAdvisorUrl = 'http://localhost:5000/roboadvisor';
+  private roboAdvisorUrl = 'http://13.233.161.221:5000/roboadvisor';
 
   constructor(private http: HttpClient) {}
 

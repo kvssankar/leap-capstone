@@ -6,7 +6,7 @@ const app = express();
 
 const PORT = 5000;
 
-const TARGET_URL = "http://localhost:8080";
+const TARGET_URL = "http://13.233.161.221:8080";
 
 function authMiddleware(req, res, next) {
   next();
@@ -33,5 +33,5 @@ app.use(authMiddleware);
 app.use("/", createProxyMiddleware(proxyOptions));
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://13.233.161.221:${PORT}`);
 });

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class MarketwatchService {
-  private url: string = 'http://localhost:3000/fmts/trades/prices';
+  private url: string = 'http://13.233.161.221:3000/fmts/trades/prices';
 
   constructor(private http: HttpClient) {}
 

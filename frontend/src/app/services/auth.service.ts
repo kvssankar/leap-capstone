@@ -13,15 +13,17 @@ import { UserPreference } from '../models/UserPreferences';
   providedIn: 'root',
 })
 export class AuthService {
-  private verifyUrl = 'http://localhost:3000/verify';
-  private registerUrl = 'http://localhost:3000/users/register';
-  private loginUrl = 'http://localhost:5000/user/login';
-  private registerUrl1 = 'http://localhost:5000/user/register';
-  private verifyEmailUrl = 'http://localhost:5000/user/verifyEmail';
-  private addUserPreferenceURL = 'http://localhost:5000/user/addPreference';
+  private verifyUrl = 'http://13.233.161.221:3000/verify';
+  private registerUrl = 'http://13.233.161.221:3000/users/register';
+  private loginUrl = 'http://13.233.161.221:5000/user/login';
+  private registerUrl1 = 'http://13.233.161.221:5000/user/register';
+  private verifyEmailUrl = 'http://13.233.161.221:5000/user/verifyEmail';
+  private addUserPreferenceURL =
+    'http://13.233.161.221:5000/user/addPreference';
   private updateUserPreferenceURL =
-    'http://localhost:5000/user/updatePreference';
-  private updateUserDataURL = 'http://localhost:5000/user/updatePreference';
+    'http://13.233.161.221:5000/user/updatePreference';
+  private updateUserDataURL =
+    'http://13.233.161.221:5000/user/updatePreference';
 
   //   userlist = mockUsers; // Importing mock data from file
 

@@ -31,10 +31,10 @@ public class UserController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "http://13.233.161.221:4200")
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody User user) {
-        String url = "http://localhost:3000/fmts/client";
+        String url = "http://13.233.161.221:3000/fmts/client";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         Map<String, String> json = new HashMap<>();
@@ -59,7 +59,7 @@ public class UserController {
         return ResponseEntity.ok(service.register(user));
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "http://13.233.161.221:4200")
     @GetMapping("/login/{email}")
     public ResponseEntity<User> login(@PathVariable("email") String email) {
         System.out.println(email);
@@ -67,7 +67,7 @@ public class UserController {
         return ResponseEntity.ok(service.login(email));
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "http://13.233.161.221:4200")
     @GetMapping("/verifyEmail/{email}")
     public ResponseEntity<Integer> verifyEmail(@PathVariable("email") String email) {
         logger.info("User email verified: ", email);
