@@ -396,7 +396,7 @@
 
 				<configuration>
 
-					<release>${java.version}</release>
+					<release>17</release>
 
 				</configuration>
 
@@ -408,19 +408,6 @@
 
 
 
-			<!-- Generate Javadoc for this project with the following command (ignore the errors and warnings):
-
-			        mvn javadoc:javadoc
-
-			     Then open target/site/apidocs/index.html -->
-
-			<plugin>
-
-				<groupId>org.apache.maven.plugins</groupId>
-
-				<artifactId>maven-javadoc-plugin</artifactId>
-
-			</plugin>
 
 		</plugins>
 
